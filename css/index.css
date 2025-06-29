@@ -1,0 +1,570 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", Arial, Helvetica, sans-serif;
+  --font-color-primary: #ffffff;
+  --font-color-secondary: #edf2f4;
+  --backup-font-color: #000000;
+
+  --background-color-primary: #c5d1eb;
+  --background-color-secondary: #92afd7;
+  --backup-background-primary: #5a7684;
+  --backup-background-secondary: #395b50;
+  line-height: 1.6;
+ 
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin: 0;
+  
+  border: 5px solid red; 
+
+}
+
+/* start of header section styling */
+
+header {
+  height: 530px; /* Set the height of the header element to 560 pixels */
+  background-color: var(--backup-background-secondary);
+  background-size: cover; /* Cover the entire background area with the image */
+  background-position: center; /* Center the background image */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-image: url(../assets/img/coding.jpg);
+
+      border: 5px solid red; 
+
+}
+
+header img {
+  display: flex;
+  transform-origin: center;
+  position: absolute;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 100%;
+  width: 10%;
+  height: 20%;
+  transform: translateX(440%) translateY(1px);
+  background-color: white; /* Add this line */
+  padding: 5px; /* Add padding for some space around the image */
+
+  border: 5px solid red; 
+
+}
+
+header .hero {
+  display: flex; /* Enable flexbox layout for the .hero class */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column; /* Arrange elements vertically within the .hero container */
+
+  /* Center items both vertically and horizontally within the .hero container */
+  justify-content: center;
+  align-items: center;
+
+  height: 70%; /* Set the height of the .hero container to 70% of the header's height */
+  text-align: center; /* Center text within the .hero container */
+  transform: translateY(10%);
+
+      border: 5px solid red; 
+
+}
+
+header #title {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase; /* Convert text to uppercase */
+  text-align: center; /* Center text horizontally */
+  font-weight: 400; /* Set font weight to 400 (normal weight) */
+  font-size: 3.1rem; /* Set font size to 3rem */
+  margin-bottom: 4px; /* Add bottom margin */
+  color: var(--font-color-primary);
+  display: flex; /* Enable flexbox layout for the #title element */
+  flex-direction: column; /* Arrange elements vertically within the #title element */
+  justify-content: center; /* Center items vertically within the #title element */
+  letter-spacing: 2px; /* Add letter spacing */
+  height: 50%; /* Set the height of the #title element to 100% */
+
+  
+}
+
+header #subtitle {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase; /* Convert text to uppercase */
+  text-align: center; /* Center text horizontally */
+  color: var(--font-color-secondary);
+  letter-spacing: 2px; /* Add letter spacing */
+  font-weight: 400; /* Set font weight to 400 (normal weight) */
+  font-size: 1.55rem; /* Set font size to 1.25rem */
+}
+
+/* end of header */
+
+/* start of hero section styling */
+
+/* Shared styles for dynamically loaded sections */
+.about-section,
+.education-section,
+.experience-section {
+  padding: 2rem;
+  margin: auto;
+  height: 500px;
+  display: flex;
+  width: 800px; /* Set a maximum width for better control */
+  flex-direction: column;
+  border-radius: none;
+
+      border: 5px solid red; 
+
+}
+
+.about-section h2,
+.education-section h2,
+.experience-section h2 {
+  margin-top: 60px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  margin-bottom: 5px;
+  background-color: rgb(255, 255, 255);
+
+      border: 5px solid red; 
+
+}
+
+.content-details p {
+  font-size: 1rem;
+  color: #666;
+  margin: 10px 0;
+
+      border: 5px solid red; 
+
+}
+
+.content-details h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+
+      border: 5px solid red; 
+
+  
+}
+
+/* Separator line styling */
+hr.solid {
+  border-radius: 5px;
+  border: none; /* Removes any border */
+  border-top: 5px solid #5a7684; /* Adds the desired top border */
+  margin: 0; /* Removes any default margin */
+  width: 5%; /* Adjust the width as needed */
+
+      border: 5px solid red; 
+
+}
+
+/* Styling for button container */
+.button-container {
+  position: absolute;
+  margin-top: 20px; /* Add space between content and buttons */
+  display: flex;
+  flex-direction: row; /* Stack buttons vertically */
+  align-items: center; /* Center buttons horizontally within the container */
+  justify-content: center;
+  top: 950px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 25px; /* Add space between buttons */
+
+      border: 5px solid red; 
+
+}
+
+/* Styling for circular buttons */
+.circle-button {
+  width: 20px;
+  height: 20px;
+  background-color: var(--backup-background-secondary);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+      border: 5px solid red; 
+
+}
+
+.circle-button:hover {
+  background-color: var(--backup-background-primary);
+  transform: scale(1.1);
+}
+
+/* end of hero section styling */
+/* start of skills stying */
+
+.skills-section {
+  padding: 40px 375px; /* Set padding around the section */
+  margin: auto; /* Center the section horizontally */
+  height: 760px; /* Set the height of the section */
+  background-color: rgba(50, 49, 136, 0.2);
+  flex-direction: column; /* Center items vertically within the section */
+  justify-content: center;
+  align-items: center; /* Center items horizontally within the section */
+  text-align: center; /* Center text within the section */
+  display: flex; /* Enable flexbox layout for the section */
+  background-color: var(--background-color-secondary);
+
+      border: 5px solid red; 
+
+}
+
+.skills {
+  margin-bottom: 135px;
+  display: flex; /* Enable flexbox layout for the skills container */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+  gap: 20px; /* Add space between items */
+  justify-content: space-around; /* Distribute space evenly between items */
+
+      border: 5px solid red; 
+
+}
+
+.item {
+  /* Define the flex-grow, flex-shrink, and flex-basis properties */
+  flex: 1 1 calc(25% - 20px);
+  border: none; /* Add a border to the item */
+  padding: 20px; /* Add padding inside the item */
+  text-align: center; /* Center text within the item */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  background-color: var(
+    --background-color-primary
+  ); /* Set the background color */
+  color: rgb(255, 255, 255); /* Set the text color to white */
+  font-size: 3rem; /* Set the font size */
+  width: 420px; /* Set the width of the item */
+  height: 120px; /* Set the height of the item */
+
+      border: 5px solid red; 
+
+}
+
+.left {
+  margin-top: 100px;
+  width: 50px; /* Set the width of the '.left' class */
+  text-transform: uppercase; /* Convert text to uppercase */
+  font-size: 1.5rem; /* Set font size to 3rem */
+  margin-bottom: 4px; /* Add bottom margin */
+  color: var(--font-color-primary);
+  display: flex; /* Enable flexbox layout for the #title element */
+  flex-direction: column; /* Arrange elements vertically within the #title element */
+  letter-spacing: 5px; /* Add letter spacing */
+  border: 5px solid red; 
+
+}
+
+/* Solid border */
+hr.solid {
+  border-radius: 5px;
+  border: none; /* Removes any border */
+  border-top: 5px solid #5a7684; /* Adds the desired top border */
+  margin: 0; /* Removes any default margin */
+  width: 5%; /* Adjust the width as needed */
+
+      border: 5px solid red; 
+
+}
+
+/* end of skills section */
+/* start of footer */
+
+footer {
+  height: 60vh;
+  background-color: var(--backup-background-secondary);
+  display: flex;
+  position: relative;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  /*
+    align-items: center;
+    */
+  padding: 7% 7%;
+
+      border: 5px solid red; 
+
+}
+
+footer .left-side {
+  width: 50%;
+  justify-content: center;
+  align-items: center; /* Center items horizontally within the section */
+  text-align: center; /* Center text within the section */
+
+      border: 5px solid red; 
+
+}
+
+footer h5 {
+  letter-spacing: 2px; /* Add letter spacing */
+  font-weight: 400;
+  font-size: 4.5rem;
+  margin-bottom: 3%;
+  color: var(--font-color-primary);
+
+      border: 5px solid red; 
+
+}
+
+footer h6 {
+  letter-spacing: 2px; /* Add letter spacing */
+  font-weight: 60;
+  font-size: 2.5rem;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  margin: auto;
+  color: var(--font-color-primary);
+  white-space: nowrap;
+
+  justify-content: center;
+  align-items: center; /* Center items horizontally within the section */
+  text-align: center; /* Center text within the section */
+  display: flex;
+
+      border: 5px solid red; 
+
+}
+
+footer p {
+  color: var(--font-color-secondary);
+  margin: auto;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  justify-content: center;
+  align-items: center; /* Center items horizontally within the section */
+  text-align: center; /* Center text within the section */
+  display: flex;
+
+      border: 5px solid red; 
+
+}
+
+footer .left-side .socials {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 4px; /* Add letter spacing */
+
+      border: 5px solid red; 
+
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--font-color-secondary);
+  transition: color 0.3s ease;
+
+      border: 5px solid red; 
+
+}
+
+footer .left-side .socials a:hover {
+  color: var(--background-color-primary);
+  
+}
+
+footer .left-side .socials a i {
+  font-size: 2rem;
+}
+
+/* end of footer styling */
+
+/* Medium screens: Tablets and small desktops (1024px and down) */
+@media (max-width: 1024px) {
+  header {
+    height: auto;
+    padding: 2rem 1rem;
+    background-size: cover;
+    background-position: center;
+  }
+
+  header .hero {
+    transform: none;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  header img {
+    position: static;
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 0 auto;
+    transform: none;
+  }
+
+  .skills-section {
+    padding: 2rem 1rem;
+    height: auto;
+  }
+
+  .skills {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .item {
+    flex: 0 1 calc(33.333% - 20px);
+    max-width: 180px;
+    height: 100px;
+    font-size: 2.2rem;
+  }
+
+  .about-section,
+  .education-section,
+  .experience-section {
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .button-container {
+    position: static;
+    margin-top: 1.5rem;
+    flex-direction: row;
+    justify-content: center;
+    transform: none;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 2rem;
+    height: auto;
+  }
+
+  footer .left-side {
+    width: 100%;
+  }
+}
+
+
+/* Small screens: Phones (768px and down) */
+@media (max-width: 768px) {
+  header #title {
+    font-size: 2.2rem;
+  }
+
+  header #subtitle {
+    font-size: 1.2rem;
+  }
+
+  .item {
+    flex: 0 1 calc(50% - 15px);
+    max-width: 150px;
+    height: 90px;
+    font-size: 1.7rem;
+  }
+
+  .left {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+
+  footer h5 {
+    font-size: 2rem;
+  }
+
+  footer h6 {
+    font-size: 1.3rem;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+
+  .circle-button {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Extra small screens: Very small phones (480px and down) */
+@media (max-width: 480px) {
+  .item {
+    flex: 0 1 100%;
+    max-width: 100%;
+    height: 80px;
+    font-size: 1.5rem;
+  }
+
+  header #title {
+    font-size: 1.8rem;
+  }
+
+  header #subtitle {
+    font-size: 1rem;
+  }
+
+  .skills {
+    gap: 1rem;
+  }
+
+  .button-container {
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  footer h5,
+  footer h6,
+  footer p {
+    text-align: center;
+  }
+
+  .circle-button {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+
+/* Ultra-small screens (320px and below) */
+@media (max-width: 320px) {
+  .item {
+    font-size: 1.2rem;
+    height: 70px;
+  }
+
+  header #title,
+  header #subtitle,
+  footer h5,
+  footer h6 {
+    font-size: 1.1rem;
+  }
+}
+
+/* these media queries 
+
+Stacks sections vertically as screen narrows.
+
+Dynamically resizes fonts, icons, image size, and buttons.
+
+Prevents overflow in your .skills grid — switches from 4→3→2→1 items/row.
+
+Converts footer and header into clean, single-column layout on mobile.
+
+Makes .button-container flexible and not dependent on fixed top/left coordinates.
+/*
