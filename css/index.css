@@ -18,9 +18,6 @@
 .hero h1 {
   font-size: 3em;
   margin: 0;
-  
-  border: 5px solid red; 
-
 }
 
 /* start of header section styling */
@@ -36,7 +33,6 @@ header {
   align-content: center;
   background-image: url(../assets/img/coding.jpg);
 
-      border: 5px solid red; 
 
 }
 
@@ -55,7 +51,6 @@ header img {
   background-color: white; /* Add this line */
   padding: 5px; /* Add padding for some space around the image */
 
-  border: 5px solid red; 
 
 }
 
@@ -74,8 +69,6 @@ header .hero {
   height: 70%; /* Set the height of the .hero container to 70% of the header's height */
   text-align: center; /* Center text within the .hero container */
   transform: translateY(10%);
-
-      border: 5px solid red; 
 
 }
 
@@ -122,8 +115,6 @@ header #subtitle {
   flex-direction: column;
   border-radius: none;
 
-      border: 5px solid red; 
-
 }
 
 .about-section h2,
@@ -136,7 +127,6 @@ header #subtitle {
   margin-bottom: 5px;
   background-color: rgb(255, 255, 255);
 
-      border: 5px solid red; 
 
 }
 
@@ -145,7 +135,6 @@ header #subtitle {
   color: #666;
   margin: 10px 0;
 
-      border: 5px solid red; 
 
 }
 
@@ -154,7 +143,6 @@ header #subtitle {
   margin-bottom: 10px;
   color: #333;
 
-      border: 5px solid red; 
 
   
 }
@@ -166,8 +154,6 @@ hr.solid {
   border-top: 5px solid #5a7684; /* Adds the desired top border */
   margin: 0; /* Removes any default margin */
   width: 5%; /* Adjust the width as needed */
-
-      border: 5px solid red; 
 
 }
 
@@ -184,7 +170,6 @@ hr.solid {
   transform: translateX(-50%);
   gap: 25px; /* Add space between buttons */
 
-      border: 5px solid red; 
 
 }
 
@@ -199,7 +184,6 @@ hr.solid {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease, transform 0.3s ease;
 
-      border: 5px solid red; 
 
 }
 
@@ -223,7 +207,6 @@ hr.solid {
   display: flex; /* Enable flexbox layout for the section */
   background-color: var(--background-color-secondary);
 
-      border: 5px solid red; 
 
 }
 
@@ -234,7 +217,6 @@ hr.solid {
   gap: 20px; /* Add space between items */
   justify-content: space-around; /* Distribute space evenly between items */
 
-      border: 5px solid red; 
 
 }
 
@@ -254,7 +236,6 @@ hr.solid {
   width: 420px; /* Set the width of the item */
   height: 120px; /* Set the height of the item */
 
-      border: 5px solid red; 
 
 }
 
@@ -268,7 +249,6 @@ hr.solid {
   display: flex; /* Enable flexbox layout for the #title element */
   flex-direction: column; /* Arrange elements vertically within the #title element */
   letter-spacing: 5px; /* Add letter spacing */
-  border: 5px solid red; 
 
 }
 
@@ -280,7 +260,6 @@ hr.solid {
   margin: 0; /* Removes any default margin */
   width: 5%; /* Adjust the width as needed */
 
-      border: 5px solid red; 
 
 }
 
@@ -303,7 +282,6 @@ footer {
     */
   padding: 7% 7%;
 
-      border: 5px solid red; 
 
 }
 
@@ -313,7 +291,6 @@ footer .left-side {
   align-items: center; /* Center items horizontally within the section */
   text-align: center; /* Center text within the section */
 
-      border: 5px solid red; 
 
 }
 
@@ -324,7 +301,6 @@ footer h5 {
   margin-bottom: 3%;
   color: var(--font-color-primary);
 
-      border: 5px solid red; 
 
 }
 
@@ -343,7 +319,6 @@ footer h6 {
   text-align: center; /* Center text within the section */
   display: flex;
 
-      border: 5px solid red; 
 
 }
 
@@ -357,7 +332,6 @@ footer p {
   text-align: center; /* Center text within the section */
   display: flex;
 
-      border: 5px solid red; 
 
 }
 
@@ -366,7 +340,6 @@ footer .left-side .socials {
   margin-bottom: 2rem;
   letter-spacing: 4px; /* Add letter spacing */
 
-      border: 5px solid red; 
 
 }
 
@@ -375,7 +348,6 @@ footer a {
   color: var(--font-color-secondary);
   transition: color 0.3s ease;
 
-      border: 5px solid red; 
 
 }
 
