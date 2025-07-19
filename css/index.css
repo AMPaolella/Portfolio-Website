@@ -12,11 +12,10 @@
   --backup-background-primary: #5a7684;
   --backup-background-secondary: #395b50;
   line-height: 1.6;
- 
 }
 
 .hero h1 {
-  font-size: 3em;
+  font-size: 3rem;
   margin: 0;
 }
 
@@ -32,8 +31,6 @@ header {
   align-items: center;
   align-content: center;
   background-image: url(../assets/img/coding.jpg);
-
-
 }
 
 header img {
@@ -50,8 +47,6 @@ header img {
   transform: translateX(440%) translateY(1px);
   background-color: white; /* Add this line */
   padding: 5px; /* Add padding for some space around the image */
-
-
 }
 
 header .hero {
@@ -69,7 +64,6 @@ header .hero {
   height: 70%; /* Set the height of the .hero container to 70% of the header's height */
   text-align: center; /* Center text within the .hero container */
   transform: translateY(10%);
-
 }
 
 header #title {
@@ -85,8 +79,6 @@ header #title {
   justify-content: center; /* Center items vertically within the #title element */
   letter-spacing: 2px; /* Add letter spacing */
   height: 50%; /* Set the height of the #title element to 100% */
-
-  
 }
 
 header #subtitle {
@@ -106,7 +98,7 @@ header #subtitle {
 /* Shared styles for dynamically loaded sections */
 .about-section,
 .education-section,
-.experience-section {
+.projects-section {
   padding: 2rem;
   margin: auto;
   height: 500px;
@@ -114,37 +106,40 @@ header #subtitle {
   width: 800px; /* Set a maximum width for better control */
   flex-direction: column;
   border-radius: none;
+}
 
+.experience-section,
+.button-container {
+  padding: 2rem;
+  margin: auto;
+  display: flex;
+  width: 800px;
+  flex-direction: column;
+  border-radius: none;
 }
 
 .about-section h2,
 .education-section h2,
-.experience-section h2 {
-  margin-top: 60px;
+.experience-section h2,
+.projects-section h2 {
+  margin-top: 50px;
   text-transform: uppercase;
   font-size: 1.5rem;
   letter-spacing: 5px;
   margin-bottom: 5px;
   background-color: rgb(255, 255, 255);
-
-
 }
 
 .content-details p {
   font-size: 1rem;
   color: #666;
   margin: 10px 0;
-
-
 }
 
 .content-details h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
   color: #333;
-
-
-  
 }
 
 /* Separator line styling */
@@ -154,7 +149,6 @@ hr.solid {
   border-top: 5px solid #5a7684; /* Adds the desired top border */
   margin: 0; /* Removes any default margin */
   width: 5%; /* Adjust the width as needed */
-
 }
 
 /* Styling for button container */
@@ -162,29 +156,21 @@ hr.solid {
   position: absolute;
   margin-top: 20px; /* Add space between content and buttons */
   display: flex;
-  flex-direction: row; /* Stack buttons vertically */
-  align-items: center; /* Center buttons horizontally within the container */
-  justify-content: center;
-  top: 950px;
-  left: 50%;
-  transform: translateX(-50%);
+  flex-direction: column; /* Stack buttons vertically */
+  transform: translateY(100%);
   gap: 25px; /* Add space between buttons */
-
-
 }
 
 /* Styling for circular buttons */
 .circle-button {
   width: 20px;
   height: 20px;
-  background-color: var(--backup-background-secondary);
+  background-color: var(--background-color-primary);
   border: none;
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease, transform 0.3s ease;
-
-
 }
 
 .circle-button:hover {
@@ -206,8 +192,6 @@ hr.solid {
   text-align: center; /* Center text within the section */
   display: flex; /* Enable flexbox layout for the section */
   background-color: var(--background-color-secondary);
-
-
 }
 
 .skills {
@@ -216,8 +200,6 @@ hr.solid {
   flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
   gap: 20px; /* Add space between items */
   justify-content: space-around; /* Distribute space evenly between items */
-
-
 }
 
 .item {
@@ -235,8 +217,6 @@ hr.solid {
   font-size: 3rem; /* Set the font size */
   width: 420px; /* Set the width of the item */
   height: 120px; /* Set the height of the item */
-
-
 }
 
 .left {
@@ -249,7 +229,6 @@ hr.solid {
   display: flex; /* Enable flexbox layout for the #title element */
   flex-direction: column; /* Arrange elements vertically within the #title element */
   letter-spacing: 5px; /* Add letter spacing */
-
 }
 
 /* Solid border */
@@ -259,8 +238,6 @@ hr.solid {
   border-top: 5px solid #5a7684; /* Adds the desired top border */
   margin: 0; /* Removes any default margin */
   width: 5%; /* Adjust the width as needed */
-
-
 }
 
 /* end of skills section */
@@ -281,8 +258,6 @@ footer {
     align-items: center;
     */
   padding: 7% 7%;
-
-
 }
 
 footer .left-side {
@@ -290,8 +265,6 @@ footer .left-side {
   justify-content: center;
   align-items: center; /* Center items horizontally within the section */
   text-align: center; /* Center text within the section */
-
-
 }
 
 footer h5 {
@@ -300,8 +273,6 @@ footer h5 {
   font-size: 4.5rem;
   margin-bottom: 3%;
   color: var(--font-color-primary);
-
-
 }
 
 footer h6 {
@@ -318,8 +289,6 @@ footer h6 {
   align-items: center; /* Center items horizontally within the section */
   text-align: center; /* Center text within the section */
   display: flex;
-
-
 }
 
 footer p {
@@ -331,29 +300,22 @@ footer p {
   align-items: center; /* Center items horizontally within the section */
   text-align: center; /* Center text within the section */
   display: flex;
-
-
 }
 
 footer .left-side .socials {
   margin-top: 2rem;
   margin-bottom: 2rem;
   letter-spacing: 4px; /* Add letter spacing */
-
-
 }
 
 footer a {
   text-decoration: none;
   color: var(--font-color-secondary);
   transition: color 0.3s ease;
-
-
 }
 
 footer .left-side .socials a:hover {
   color: var(--background-color-primary);
-  
 }
 
 footer .left-side .socials a i {
@@ -362,97 +324,204 @@ footer .left-side .socials a i {
 
 /* end of footer styling */
 
-/* Medium screens: Tablets and small desktops (1024px and down) */
-@media (max-width: 1024px) {
+/* Beginning of Media Queries */
+
+/* Base adjustments for all small devices */
+@media (max-width: 1200px) {
+  .about-section,
+  .education-section,
+  .projects-section,
+  .experience-section,
+  .button-container {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .skills-section {
+    padding: 40px 60px;
+    height: auto;
+  }
+
+  .skills {
+    align-items: center;
+    gap: 20px;
+  }
+
+  .item {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    flex-direction: row;
+    font-size: 2rem;
+  }
+
   header {
     height: auto;
     padding: 2rem 1rem;
-    background-size: cover;
-    background-position: center;
-  }
-
-  header .hero {
-    transform: none;
-    height: auto;
-    margin-bottom: 1rem;
   }
 
   header img {
     position: static;
     width: 120px;
     height: 120px;
-    display: block;
-    margin: 0 auto;
     transform: none;
+    margin: 1rem auto;
   }
 
-  .skills-section {
-    padding: 2rem 1rem;
-    height: auto;
-  }
-
-  .skills {
-    justify-content: center;
-    gap: 1.5rem;
-  }
-
-  .item {
-    flex: 0 1 calc(33.333% - 20px);
-    max-width: 180px;
-    height: 100px;
-    font-size: 2.2rem;
-  }
-
-  .about-section,
-  .education-section,
-  .experience-section {
-    width: 90%;
-    height: auto;
-    padding: 1rem;
-  }
-
-  .button-container {
-    position: static;
-    margin-top: 1.5rem;
-    flex-direction: row;
-    justify-content: center;
+  header .hero {
     transform: none;
-  }
-
-  footer {
-    flex-direction: column;
-    padding: 2rem;
     height: auto;
+    padding-top: 1rem;
   }
 
-  footer .left-side {
-    width: 100%;
-  }
-}
-
-
-/* Small screens: Phones (768px and down) */
-@media (max-width: 768px) {
   header #title {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    height: auto;
   }
 
   header #subtitle {
     font-size: 1.2rem;
   }
 
-  .item {
-    flex: 0 1 calc(50% - 15px);
-    max-width: 150px;
-    height: 90px;
-    font-size: 1.7rem;
+  .button-container {
+    position: static;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 2rem;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  footer .left-side {
+    width: 100%;
+  }
+
+  footer h5 {
+    font-size: 2.2rem;
+  }
+
+  footer h6 {
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+
+  footer .socials {
+    font-size: 1.5rem;
+  }
+}
+
+/* MOBILE FIRST FIX — MAX WIDTH 767px */
+@media (max-width: 767px) {
+  /* General resets */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    height: auto;
+    padding: 2rem 1rem;
+    background-position: center;
+    background-size: cover;
+  }
+
+  header img {
+    position: static;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 1rem;
+    display: block;
+    transform: none;
+  }
+
+  header .hero {
+    height: auto;
+    padding: 1rem 0;
+    transform: none;
+  }
+
+  header #title {
+    font-size: 2rem;
+    text-align: center;
+    height: auto;
+    letter-spacing: 1px;
+  }
+
+  header #subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  /* Dynamic sections */
+  .about-section,
+  .education-section,
+  .projects-section,
+  .experience-section,
+  .button-container {
+    width: 100%;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .about-section h2,
+  .education-section h2,
+  .projects-section h2,
+  .experience-section h2 {
+    text-align: center;
+  }
+
+  /* Fixing button layout */
+  .button-container {
+    position: static;
+    transform: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .circle-button {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Skills section */
+  .skills-section {
+    padding: 2rem 1rem;
+    height: auto;
   }
 
   .left {
-    width: 100%;
+    font-size: 1rem;
     text-align: center;
-    margin: 1rem 0;
-    font-size: 1.2rem;
+    margin: 1rem auto;
+    width: auto;
+  }
+
+  /* Footer adjustments */
+  footer {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    height: auto;
+    text-align: center;
+  }
+
+  footer .left-side {
+    width: 100%;
   }
 
   footer h5 {
@@ -460,83 +529,20 @@ footer .left-side .socials a i {
   }
 
   footer h6 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    margin: 1rem 0;
   }
 
   footer p {
     font-size: 1rem;
   }
 
-  .circle-button {
-    width: 18px;
-    height: 18px;
-  }
-}
-
-/* Extra small screens: Very small phones (480px and down) */
-@media (max-width: 480px) {
-  .item {
-    flex: 0 1 100%;
-    max-width: 100%;
-    height: 80px;
+  footer .left-side .socials a i {
     font-size: 1.5rem;
   }
 
-  header #title {
-    font-size: 1.8rem;
-  }
-
-  header #subtitle {
-    font-size: 1rem;
-  }
-
-  .skills {
-    gap: 1rem;
-  }
-
-  .button-container {
-    margin-top: 1rem;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  footer h5,
-  footer h6,
-  footer p {
-    text-align: center;
-  }
-
-  .circle-button {
-    width: 16px;
-    height: 16px;
+  hr.solid {
+    width: 30%;
+    margin: 1rem auto;
   }
 }
-
-
-/* Ultra-small screens (320px and below) */
-@media (max-width: 320px) {
-  .item {
-    font-size: 1.2rem;
-    height: 70px;
-  }
-
-  header #title,
-  header #subtitle,
-  footer h5,
-  footer h6 {
-    font-size: 1.1rem;
-  }
-}
-
-/* these media queries 
-
-Stacks sections vertically as screen narrows.
-
-Dynamically resizes fonts, icons, image size, and buttons.
-
-Prevents overflow in your .skills grid — switches from 4→3→2→1 items/row.
-
-Converts footer and header into clean, single-column layout on mobile.
-
-Makes .button-container flexible and not dependent on fixed top/left coordinates.
-/*
