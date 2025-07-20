@@ -81,7 +81,6 @@ document.addEventListener("DOMContentLoaded", () => {
   </section>
 `;
 
-
   // Load initial content
   contentDiv.innerHTML = aboutContent;
 
@@ -105,7 +104,6 @@ document.addEventListener("DOMContentLoaded", () => {
   buttonContainer.appendChild(experienceBtn);
   buttonContainer.appendChild(projectBtn);
 
-
   // Add the button container to the DOM
   document.querySelector("header").appendChild(buttonContainer);
 
@@ -123,7 +121,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   projectBtn.addEventListener("click", () => {
-    contentDiv.innerHTML = projectContent; 
+    contentDiv.innerHTML = projectContent;
   });
-
 });
